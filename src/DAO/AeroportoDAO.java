@@ -23,7 +23,7 @@ public class AeroportoDAO {
             
             pst.setString(1, aero.getIdentificacao());
             pst.setString(2, aero.getNome());
-            pst.setString(3, aero.getMunicipio());
+            pst.setString(3, aero.getCidade());
             pst.setString(4, aero.getEstado());
             pst.setString(5, aero.getPais());
 

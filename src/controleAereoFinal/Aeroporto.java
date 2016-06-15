@@ -3,15 +3,15 @@ package controleAereoFinal;
 public class Aeroporto {
 	private String identificacao;
 	private String nome;
-	private String municipio;
+	private Cidade cidade;
 	private String estado;
 	private String pais;
 
-	public Aeroporto(String identificacao, String nome, String municipio, String estado, String pais) {
+	public Aeroporto(String identificacao, String nome, Cidade cidade, String estado, String pais) {
 
 		this.identificacao = identificacao;
 		this.nome = nome;
-		this.municipio = municipio;
+		this.cidade = cidade;
 		this.estado = estado;
 		this.pais = pais;
 	}
@@ -32,12 +32,12 @@ public class Aeroporto {
 		this.nome = nome;
 	}
 
-	public String getMunicipio() {
-		return municipio;
+	public Cidade getCidade() {
+		return cidade;
 	}
 
-	public void setMunicipio(String municipio) {
-		this.municipio = municipio;
+	public void setCidade(Cidade cidade) {
+		this.cidade = cidade;
 	}
 
 	public String getEstado() {
@@ -60,7 +60,7 @@ public class Aeroporto {
 		System.out.println("***********************************");
 		System.out.println("Identificação    : " + identificacao);
 		System.out.println("Nome             : " + nome);
-		System.out.println("Município        : " + municipio);
+		System.out.println("Cidade           : " + cidade);
 		System.out.println("Estado           : " + estado);
 		System.out.println("País             : " + pais);
 
